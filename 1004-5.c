@@ -6,43 +6,43 @@ int main()
    int app;
    int income;
    int Public_servant;
-   printf("%s","¦~ÄÖ:");
+   printf("%s","å¹´é½¡:");
    scanf("%d",&age);
    if (age>30)
    {
-       printf("%s","¤£¨£");
+       printf("%s","ä¸è¦‹");
    }
    else
    {
-       printf("%s","ªø¬Û (0: Áà, 1: «Ó, 2: ¤¤µ¥):\n");
+       printf("%s","é•·ç›¸ (0: é†œ, 1: å¸¥, 2: ä¸­ç­‰):\n");
        scanf("%d",&app);
      if(app==0)
      {
-          printf("%s","¤£¨£");
+          printf("%s","ä¸è¦‹");
      }
      else
      {
-         printf("%s","¦¬¤J (0: §C, 1: ¤¤, 2: °ª):\n");
+         printf("%s","æ”¶å…¥ (0: ä½, 1: ä¸­, 2: é«˜):\n");
          scanf("%d",&income);
          if(income==0)
          {
-              printf("%s","¤£¨£");
+              printf("%s","ä¸è¦‹");
          }
          else if(income==2)
          {
-              printf("%s","¨£");
+              printf("%s","è¦‹");
          }
          else
          {
-             printf("%s","¬O§_¬°¤½°È­û (0: §_, 1: ¬O):\n");
+             printf("%s","æ˜¯å¦ç‚ºå…¬å‹™å“¡ (0: å¦, 1: æ˜¯):\n");
              scanf("%d",&Public_servant);
              if(Public_servant==0)
              {
-                  printf("%s","¤£¨£");
+                  printf("%s","ä¸è¦‹");
              }
              else
              {
-                  printf("%s","¨£");
+                  printf("%s","è¦‹");
              }
          }
      }
