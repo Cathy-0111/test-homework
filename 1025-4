@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void fun(int n,int m){
+    int prime=0;
+    for(int i=n;i<=m;i++){
+        prime=0;
+        for(int j=2;j<i/2+1;j++){
+            if(i%j==0){
+                prime=1;
+                break;
+            }
+
+        }
+        if(prime==0&&i!=1){
+            printf("%d ",i);
+        }
+    }
+}
+
+int main(){
+    int n,m;
+    scanf("%d%d",&n,&m);
+    fun(n,m);
+}
