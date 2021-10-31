@@ -1,0 +1,20 @@
+#include<stdio.h>
+#include<math.h>
+
+void fun(int n,int m){
+    int t=12;
+    char arr[]="0000000000000";
+    while(t>=0){
+        arr[t]=(char)(n%m)+48;      //n%m要記得轉char     //  %不會跟/一樣優先做，要先括起來
+        n/=m;
+        t--;
+    }
+    printf("%s\n",arr);
+}
+
+int main(){
+    int n,m;
+    scanf("%d%d",&n,&m);
+    fun(n,m);
+}
+
