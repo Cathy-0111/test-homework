@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+int main()
+{
+    int a, b, t,n,m,k;
+    
+    scanf("%d%d",&a,&b);
+    m=a;
+    n=b;
+    if (a>b)
+    {
+        while( a>b&&b!=0 )
+        {
+            t = b;
+            b = a%b;
+            a = t;
+        }
+        printf("%d\n",a);
+        k=n*m/a;
+        printf("%d\n",k);
+    }
+    
+
+    if (b>a)
+    {
+        while( a!=0 )
+        {
+            t = a;
+            a = b%a;
+            b = t;
+        }
+        printf("%d\n",b);
+        k=n*m/b;
+        printf("%d\n",k);
+    }
+    
+
+    
+   
+    return 0;
+}
