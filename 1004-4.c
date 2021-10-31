@@ -6,38 +6,38 @@ int main(void)
  scanf("%d",&input);
  if(input%4==0&&input%100!=0)
  {
-     printf("%s","¶|¦~");
+     printf("%s","é–å¹´");
  }
  else if(input%4==0&&input%100==0&&input%400!=0)
  {
-     printf("%s","¥­¦~");
+     printf("%s","å¹³å¹´");
  }
  else if(input%4==0&&input%100==0&&input%400==0)
  {
-     printf("%s","¶|¦~");
+     printf("%s","é–å¹´");
  }
  else
  {
-     printf("%s","¥­¦~\n");
+     printf("%s","å¹³å¹´\n");
      if (input%4==1&&(input-1)%100!=0)
      {
-       printf("Â÷%d³Ìªñªº¶|¦~¬O %d ¦~",input,input-1);
+       printf("é›¢%dæœ€è¿‘çš„é–å¹´æ˜¯ %d å¹´",input,input-1);
        if (input%4==1&&(input-1)%100==0)
        {
-            printf("Â÷%d³Ìªñªº¶|¦~¬O %d ¦~",input,input+3);
+            printf("é›¢%dæœ€è¿‘çš„é–å¹´æ˜¯ %d å¹´",input,input+3);
        }
      }
      else if(input%4==3&&(input+1)%100!=0)
      {
-        printf("Â÷%d³Ìªñªº¶|¦~¬O %d ¦~",input,input+1);
+        printf("é›¢%dæœ€è¿‘çš„é–å¹´æ˜¯ %d å¹´",input,input+1);
      }
     else if (input%4==3&&(input+1)%100==0)
      { 
-            printf("Â÷%d³Ìªñªº¶|¦~¬O %d ¦~",input,input-3);
+            printf("é›¢%dæœ€è¿‘çš„é–å¹´æ˜¯ %d å¹´",input,input-3);
      }
      else if(input%4==2)
      {
-         printf("Â÷%d³Ìªñªº¶|¦~¬O %d ¦~ %d ¦~",input,input+2,input-2);
+         printf("é›¢%dæœ€è¿‘çš„é–å¹´æ˜¯ %d å¹´ %d å¹´",input,input+2,input-2);
      }
  }
 }
