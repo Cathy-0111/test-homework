@@ -3,32 +3,32 @@
 int main()
 {
     int input=0;
-    printf("%s","¬O§_¦³©Ğ²£?(0: No, 1: Yes)");
+    printf("%s","æ˜¯å¦æœ‰æˆ¿ç”¢?(0: No, 1: Yes)");
     scanf("%d",&input);
     if (input==1)
     {
-       printf("%s","¥i¥H¶U´Ú");
+       printf("%s","å¯ä»¥è²¸æ¬¾");
     }
     
    else if (input==0)
    {
-       printf("%s","¬O§_¤w±B?(0: No, 1: Yes)");
+       printf("%s","æ˜¯å¦å·²å©š?(0: No, 1: Yes)");
        scanf("%d",&input);
        if(input==1)
      {
-       printf("%s","¥i¥H¶U´Ú");
+       printf("%s","å¯ä»¥è²¸æ¬¾");
      }
        else if(input==0)
      {
-       printf("%s","¬O§_¦~¦¬¤J > 100¸U?(0: No, 1: Yes)");
+       printf("%s","æ˜¯å¦å¹´æ”¶å…¥ > 100è¬?(0: No, 1: Yes)");
        scanf("%d",&input);
        if(input==1)
        {
-       printf("%s","¥i¥H¶U´Ú");
+       printf("%s","å¯ä»¥è²¸æ¬¾");
        }
        else
        {
-       printf("%s","¤£¯à¶U´Ú");
+       printf("%s","ä¸èƒ½è²¸æ¬¾");
        }
 
      }
