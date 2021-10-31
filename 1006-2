@@ -1,0 +1,22 @@
+#include<stdio.h>
+
+int main(){
+    int n,m=2,t=0,prime=0;
+    scanf("%d",&n);
+    while(m<=n/2+1){
+        t++;
+        if(n%m==0){
+            prime=0;
+            printf("NO, %d",t);
+            break;
+        }
+        m++;
+        prime=1;
+    }
+    if(prime==1){
+        printf("YES, %d",t);
+    }
+    else if(n==1){
+        printf("NO, %d",t);
+    }
+}
